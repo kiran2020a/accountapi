@@ -9,7 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="accountaFlow" doc:id="1eeb1abc-d6f1-4198-b3f8-0f9c38ff445f" >
 		<http:listener doc:name="Listener" doc:id="486d7108-8871-4075-9bc6-212393a54316" config-ref="HTTP_Listener_config" path="/github"/>
-		<logger level="INFO" doc:name="Logger" doc:id="ab012f23-7c9b-4aa0-9778-fb4caf4cdc10" message="github"/>
 		<set-payload value="github" doc:name="Set Payload" doc:id="e46f3a16-a674-441a-86b4-7852ebc6d039" />
 		<logger level="INFO" doc:name="Logger" doc:id="2f317800-0a25-4686-bcb9-09c31786d053" message="github completed"/>
 		<set-payload value="github" doc:name="Set Payload" doc:id="00389675-fe9f-4625-9bfa-e23cfbef5585" />
